@@ -1,0 +1,73 @@
+body {padding: 0;}
+
+* {
+	box-sizing: border-box;
+}
+
+form {
+	width: 40%;
+	margin: auto;
+}
+
+h1, h1+p{
+	text-align: center;
+	font-family: 'Lobster', cursive;
+}
+h1 {margin-bottom: 0;}
+
+h1+p {
+	margin-top: 0;
+	margin-bottom: 50px;
+}
+
+legend{
+
+}
+fieldset {
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+em {
+	color: red;
+	font-weight: bold;
+}
+
+label {
+	width: 150px;
+	display: inline-block;
+	margin: 7px;
+	font-family: 'Russo One';
+}
+input {width: 300px;}
+
+input[type="radio"] {width: 20px;}
+
+input[type="date"],
+input[type="color"] {width: 100px;}
+
+textarea{
+	width: 100%;
+	height: 100px;
+	resize: none;
+
+}
+
+label[type="game"] {
+	width: 100%;
+    text-align: center;
+} 
+
+input[type="time"] {width: 70px;}
+
+
+
+input[type="text"], input[type="imail"] textarea {padding: 2px 0.5em;}
+
+input[type="submit"] {
+	font-size: 1.5rem;
+	margin: 10px 0;
+	padding: 0.5rem 1rem;
+	width: 100%;
+	background:LightCoral ;
+}
