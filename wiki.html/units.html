@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML единицы измерения</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/icon.jpg">
+	<style>
+		ol {
+			font-size: 1.5em;
+		}
+			ul {
+			font-size: 2rem;
+		}	
+		
+	</style>
+</head>
+<body>
+	<!-- шапка сайта -->
+	<header> 
+		<a href="css.html"><img class="arrow" src="images/left_arrow.png" alt="Стрелка влево"></a>
+         <h1>Единицы измерения HTML и CSS</h1>
+		<a href="gaps.html"><img class="arrow" src="images/raight_arrow.png" alt="Стрелка вправо"></a>
+	</header>
+
+
+	<!-- основная часть сайта -->
+	<main>
+		<ol style="font-size: 1em;">
+			<li>
+				<h2>Пиксель: px </h2>
+				<p>Основная и окончательная единица измерения. все значения браузера  в итоге пересчитывает все пиксели.</p>
+			</li>
+			<li>
+				<h2>Проценты: %</h2>
+				<p>Проценты вычисляються от такого же свойства у родительского элемента. Кроме следующих случаев:</p>
+				<ul style="font-size: 1em;">
+					<li>
+						<b>margin-left (margin-rught и тд)</b>
+						<p>Процент береться от ширины а нет от его margin-left</p>
+					</li>
+					<li>
+						<b>line-height (высота строки)</b>
+						<p>Процент будет браться от ТЕКУЩЕГО размера шрифта, а нет line-heght родителя</p>
+					</li>
+					<li>
+						<b>widh/height (при position: fixed</b>
+						<p>Процент береться от ширины/высоты окна, а не от ширины/высоты родителя</p>
+					</li>
+				</ul>
+				<ul>
+				</ul>
+			</li>
+			<li>
+				<h2>Относительно шрифта: em</h2>
+				<p>1em - это текущий размер шрифта. T.e. 2em - в два раза больше текущего, а 0.5em в два раза меньше текущего.</p>
+				<div style="font-size: 10px;"> 
+					Текущий размер шрифта
+					<div style="font-size: 1.6em;.">
+						Первый текст - размер шрифта = текущий шриф * 1.6em = 10px * 1.6 = 16px
+						<div style="font-size: 2em;">
+             второй размер шрифта = 16px * 2 = 32px
+						</div>
+
+						<ol>
+							<li>один
+								<ol>
+									<li>два
+										<ol>
+											<li>три
+												<ol>
+													<li>четыре</li>
+												</ol>
+											</li>
+										</ol>
+									</li>
+								</ol>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</li>
+			<li>
+				<h2>Смесь px и em: rem</h2>
+				<p>Задает размер шрифта относитлеьно размер шрифта элемента тега html</p>
+				<ul>
+							<li>один
+								<ul>
+									<li>два
+										<ul>
+											<li>три
+												<ul>
+													<li>четыре</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+			</li>
+			<li>
+				<h2>Относительно окна: vw, vh, vmin, vmax</h2>
+		     <ul style="font-size: 1rem">
+		     	<li><b>vw</b>- один процент от ширины экрана</li>
+		     	<li><b>vh</b>- один процент высоты экрана</li>
+		     	<li><b>vmin</b>- наименьшая из(vw и vh) </li>
+		     	<li><b>vmax</b>- наибольшая из(vw и vh)</li>
+		     </ul>
+			</li>
+		</ol>
+	</main>
+</body>
+</html>

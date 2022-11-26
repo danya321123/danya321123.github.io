@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML wiki</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/icon.jpg">
+	<style>
+		
+		
+	</style>
+</head>
+<body>
+	<!-- шапка сайта -->
+<header> 
+		<a href="colors.html"><img class="arrow" src="images/left_arrow.png" alt="Стрелка влево"></a>
+         <h1>HTML wiki</h1>
+		<a href="units.html"><img class="arrow" src="images/raight_arrow.png" alt="Стрелка вправо"></a>
+	</header>
+
+
+	<!-- основная часть сайта -->
+	<main>
+	
+	
+	
+		
+	 
+
+
+<table>
+	
+
+				<td>[href~="yandex.ru"]</td>
+				<td>Выбирает все элементы с атрибутом href, в значении которого (влюбом месте) встречаеться подстрока "yandex.ru" в виде отдельного слова </td>
+			</tr>
+			     <tr>
+				<td>[атрибут*="значение"]</td>
+				<td>[href*="yandex.ru"]</td>
+				<td>Выбирает все элементы с атрибутом href, в значении которого (влюбом месте) встречаеться подстрока "yandex.ru" в виде отдельного слова или его части </td>
+			</tr>
+			<tr>
+				<td>элемент>элемент</td>
+				<td>div>p</td>
+				<td>Выбирает все элементы <i>&ltp&gt </i> внутри  <i>&ltdiv&gt </i> </td>
+			</tr>
+			<tr>
+				<td>элемент+элемент</td>
+				<td>div+p</td> 
+				<td>Выбирает все элементы  <i>&ltP&gt </i>  котрые расположени сразу после элемента  <i>&ltdiv&gt </i></td>
+			</tr>
+			<tr>
+				<td>элемента~элемент</td>
+				<td>p~div</td>
+				<td> Выбирает все элементы  <i>&ltdiv&gt </i> которые расположены сразу перед элемнтом  <i>&ltp&gt </i></td>
+			</tr>
+			<tr>
+				<td>элемент:nth-child(номер)</td>
+				<td>td:nth-child(1)</td>
+				<td>выбирает все элементы  <i>&lttd&gt </i> которые первые в своей группе</td>
+
+			</tr>
+			</main>
+		</table>
+    </main>
+</body>
+</html>

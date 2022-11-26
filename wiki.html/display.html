@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML wiki</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/icon.jpg">
+	<style>
+		
+		
+	</style>
+</head>
+<body>
+	<!-- шапка сайта -->
+<header> 
+		<a href="gaps.html"><img class="arrow" src="images/left_arrow.png" alt="Стрелка влево"></a>
+         <h1>Свойства display</h1>
+		<a href="flex.html"><img class="arrow" src="images/raight_arrow.png" alt="Стрелка вправо"></a>
+	</header>
+
+	<!-- основная часть сайта -->
+	<main>
+	<h2>Значение none </h2>
+	<p>Самое простое значение-элемент не показывает, как будто его и нет.</p>
+	<div style="border: 1px solid black;">
+		невидимый div (
+		<div style="display: none">невидимый текст</div>
+		) стоит внутри скобок
+	</div>
+	<h2>Значение blokc</h2>
+	<ul>
+		<li>Блочные элементы располагаються один за другим, вертикально.</li>
+		<li>Блок стремиться расшириться на всю доступную ширину. можно указать ему ширину и высоту.</li>
+		<li>такое значени свойства display некоторые элементы имеют по умолчанию: <b>div, h1-h6, p</b></li>
+	</ul>
+   <div style="border: 1px solid black;">
+   <div style="border: 1px solid blue;">первый</div>
+   <div style="border: 1px solid red; width: 50%;">второй</div>
+</div>
+    <h2>значение inline</h2>
+    <ul>
+    	<il>Элементы распологаються на той же строке последовательно.</il>
+    	<il>ширина и высота элемента определяються по содиржымому. Поменять их нельзя.</il>
+    	<il>Инлайновые элементы по умолчанию: <b>span, a, b</b></il>
+    </ul>
+    <span style="border: 1px solid black;">
+    	<span style="border:1px solid blue;">Ширина</span>
+    	<a style="border: 1px solid red width: 1300px">игнорируеться</a>
+    </span>
+
+    <h2>Значение inline-block</h2>
+    <ul>
+    	<li>Распологаеться в строке друг за другом.</li>
+    	<li>Размер устонавливаеться по содержимому.</li>
+    	<li>Работают свойства <b>width/height</b></li>
+    </ul>
+    <style>
+        #ib {
+        	display: inline-block;
+        	list-style-type: none;
+        	border: 1px solid red;
+        }
+    </style>
+    <div style="border:1px solid black;">
+    	<span id="ib" style="width: 100px; height: 60px">Инлайн блок  100x60</span>
+    	<span id="ib" style="width: 60px; height: 100px">Инлайн блок 60x100</span> 
+    	<span id="ib" style="width: 100px; height: 100px">Инлайн блок 100x100</span>
+    	<span id="ib">Инлайн блок ширина и высота не заданы</span>
+    </div>
+
+    <h2>Значение table-*</h2>
+    <style>
+    	#table {
+    		border: 2px solid black;
+    		font-size: 2rem;
+    	}
+    	#table>div>div {
+    		border: 1px solid black;
+    		padding: 5px 10px;
+    		text-align: center;
+    	}
+    </style>
+    <div id="table" style="display: table">
+    	<div style="display: table-row">
+    		<div style="display:  table-cell">table</div>
+    		<div style="display:  table-cell">{display: table}</div>
+    	</div>
+    	<div style="display: table-row">
+    		<div style="display:  table-cell">tr</div>
+    		<div style="display:  table-cell">{display: table-row}</div>
+    	</div>
+    	<div style="display: table-row">
+    		<div style="display:  table-cell">td, th</div>
+    		<div style="display:  table-cell">{display: table-cell}</div>
+    	</div>
+    </div>
+
+    <h2>значение List-item и run-in</h2>
+    <p><b>list-item  значение по умолчание импользуеться для элемента списка.</b></p>
+    <div style="display: list-item;: ; list-style: inside square;">пункт 1</div>
+
+    <h2>Значение flex</h2>
+    <ul>
+    	<il>Flex-direction направление элементов внутри flex-контейнира (column/row/colum-reverse/row-reverse</il>
+    	<il>justifly-content  выравниваение элементов по главному направлению (flex-start/flex-end/center/spaxe-evenly/space-between-around</il>
+    	<il>align-items выравнивание элементов по второстепеному направлению (flex-start/flex-end/center/stretch/baseline)</il>
+    </ul>
+	</main>
+	
+		
+	 
+
+</body>
+</html>
+
+

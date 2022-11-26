@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>position</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/icon.jpg">
+	<style>
+		
+		
+	</style>
+</head>
+<body>
+	<!-- шапка сайта -->
+<header> 
+		<a href="gaps.html"><img class="arrow" src="images/left_arrow.png" alt="Стрелка влево"></a>
+				 <h1>Позиционирование</h1>
+		<a href="index.html"><img class="arrow" src="images/raight_arrow.png" alt="Стрелка вправо"></a>
+	</header>
+
+
+	<!-- основная часть сайта -->
+	<main>
+	<h2>position: static (значение по умолчанию) </h2>
+	<p>Статическое позиционирование, испольцуеться как значение по умолчанию.</p>
+	<div style="background:#fae; width: 500px; ">
+		без позиционрования ("position:statik").
+		<h3 style="background: #aef; margin:0;">Заголовок</h3>
+		<div>А тут всякий разный текст.. <br>.......</div>
+	</div>
+	<h2>position: relative</h2>
+	<p>Относительное позициониравние сдвигает элемент относительно его обысного положения. Для того что бы сдивнуть элемент  необходимо задать свойство <b>position:relative</b> и воспользоваться кординатами <b>left/right/top/bottom</b> </p>
+	<div style="background:#fae; width: 500px; ">
+		аголовок сдвинут вниз и на 5 px в право.
+		<h3 style="background: #aef; margin:0; position: relative; top: 10px; left: 5px">Заголовок</h3>
+		<div>А тут всякий разный текст.. <br>.......</div>
+		</div>
+	<h2>position: absolute</h2>
+	<ol>
+		<li>Элемент исчезает с того мечта где он должен быть и позиционирует заново. Остальные элемент, распологаються так как будто этого элемента и не когда не было</li>
+		<li>Кординаты left/right/rop/bottom отсчитываеться от ближайшего позиционирование отичныи от static если такого родителя нет то относительно всего документа</li>
+		<li>Ширина элемента устанавливаеться по содержимому.</li>
+		<li>Элемент получает <b>display: block</b></li>
+	</ol>
+	<div style="background:#fae; width: 500px; position: relative;">
+		без позиционрования ("position:statik").
+		<h3 style="background: #aef; margin:0; position: absolute; top: 0; right:0 ;">Заголовок c position fixed</h3>
+		<div>А тут всякий разный текст.. <br>.......</div>
+		</div>
+		<h2>position: fixed</h2>
+		<p>позиционирует обьекты точно также как  absolute но относительно окна.</p>
+	</main>
+
+		
+	 
+
+</body>
+</html>

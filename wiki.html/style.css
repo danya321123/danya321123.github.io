@@ -1,0 +1,64 @@
+header {
+	/*Задний фон*/
+	background: skyblue;
+	/*Высота*/
+	height: 65px;
+	/*Ширина*/	
+	width: 80%;
+	/*Внешний отступ*/
+	margin: auto;
+     /*Способо отоброжения элементов в нутри этого тега*/
+     display: flex;
+     /*Способ распределения внутри*/
+     justify-content: space-between;
+     /*выравнивание внутрених элементов по ветикале*/
+    align-items: center;
+}
+     
+arrow {
+          width: 64px;
+}
+
+body {
+	margin: 0;
+	background: powderblue;
+}
+
+main {
+	width: 80%;
+    margin: auto;
+    background: whitesmoke;
+    /*Минимальная высота 80% относительно высоты экрана*/
+    min-height: calc(100vh - 65px);	
+    /*Внутриние отступы*/
+    padding: 1px 10px;
+    /*Алгоритм расчета размеров*/
+    box-sizing: border-box;
+} 
+
+
+/*Стили для таблицы*/
+table {
+	width: 100%;
+	/*Граница (обводка) */
+	border: 2px black solid;
+	/*Отступы между ячейками таблицы*/
+	border-collapse: collapse;
+}
+td {
+    border: 1px solid black;
+    background: lightyellow;
+    /*Выравнивание текста*/
+    text-align: center;
+    padding: 10px 10px;
+}    
+th {
+	border: 1px solid black;
+	background: moccasin;
+
+}
+/*Свойсва для каждго провго td*/
+ td:nth-child(1) {
+	font-weight: bold;
+
+}	

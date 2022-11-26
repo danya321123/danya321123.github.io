@@ -1,0 +1,33 @@
+header {
+	/*Задний фон*/
+	background: skyblue;
+	/*Высота*/
+	height: 65px;
+	/*Ширина*/	
+	width: 80%;
+	/*Внешний отступ*/
+	margin: auto;
+     /*Способо отоброжения элементов в нутри этого тега*/
+     display: flex;
+     /*Способ распределения внутри*/
+     justify-content: space-between;
+     /*выравнивание внутрених элементов по ветикале*/
+    align-items: center;
+}
+     
+arrow {
+          width: 64px;
+}
+
+body {
+	margin: 0;
+	background: DimGrey;
+}
+
+main {
+	width: 80%;
+    margin: auto;
+    background: Grey;
+    /*Минимальная высота 80% относительно высоты экрана*/
+    min-height: calc(100vh - 65px);	
+} 

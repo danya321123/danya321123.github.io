@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML wiki</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/icon.jpg">
+	<style>
+		#small, #smallll {
+			position: absolute;
+		}
+		#big {
+			width: 500px;
+			height: 200px;
+			background: coral;
+			/* Внешнии отступы */
+			margin-left: 50px;
+			margin-top: 20px;
+			margin-bottom: 50px;
+			/* Внутриние отступы */
+			padding-left: 20px;
+			padding-top: 50px;
+		}
+		#small {
+			width: 200px;
+			height: 100px;
+			background: rebeccapurple;
+		}
+		#smallll {
+			width: 200px;
+			height: 100px;
+			background: rebeccapurple;
+			margin-left: 250px;
+		}
+		#world {
+			width: 400px;
+			height: 500px;
+			background: red;
+			padding-top: 400px;
+		}
+		
+	</style>
+</head>
+<body>
+	<!-- шапка сайта -->
+<header> 
+		<a href="units.html"><img class="arrow" src="images/left_arrow.png" alt="Стрелка влево"></a>
+         <h1>Внутрине и внешние отступы</h1>
+		<a href="position.html"><img class="arrow" src="images/raight_arrow.png" alt="Стрелка вправо"></a>
+	</header>
+
+
+	<!-- основная часть сайта -->
+	<main>
+	<div id="big">
+		<div id="small"></div>
+		<div id="smallll"> </div>
+	</div>
+	<h2>Сокращенная запись margin и padding</h2>
+	<ul>
+		<li><b>4 значения</b> - отсупы: сверху, справа, снизу, слева</li>
+		<li><b>3 значения</b> - отсупы: сверху, слева/справа, снизу</li>
+		<li><b>2 значения</b> - отсупы: вертикальные, горизонтальные   </li>
+		<li><b>1 значение</b> - одинаковые отсупы для всех сторон</li>
+	</ul>
+	</main>
+	
+		
+	 
+
+</body>
+</html>
