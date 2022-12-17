@@ -1,0 +1,49 @@
+@media screen and (max-width: 1199px) {
+	.img-box {
+		width: 90vw;
+		column-count: 3;
+
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.img-box {
+		width: 100vw;
+		column-count: 2;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.img-box {
+		column-count: 1;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.img-link {transition: 0.5s ease-in-out}
+	.img-link:hover {
+		/*Размытие */
+		/*filter: blur(2px);*/
+		/*Яркость*/
+		/*filter: brightness(1.5);*/
+		/*Контрасность*/
+		/*filter: contrast(140%);
+		/*Отбрасывание тени*/
+		filter: drop-shadow(15px 10px #3D403C) ;
+		/*Перевод в черно белое*/
+		/*filter: grayscale(50%);*/
+		/*Насыщеность цветов*/
+		/*filter: saturate(500%);*/
+		/*Сепия (эффект старины)*/
+		/*filter: sepia(80%);*/
+		/*Инверсия цветов*/
+		/*filter: invert(70%);*/
+		/*Изменение цветового отенка*/
+		/*filter: hue-rotate(90deg);*/
+		/*Прозрачность*/
+		/*filter: opacity(50%);*/
+		/**/
+	}
+}
+
+
