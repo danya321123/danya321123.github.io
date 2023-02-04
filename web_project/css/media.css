@@ -1,0 +1,90 @@
+@media screen and (min-width: 1150px) {
+	.nav-link, .zero_btn, .second_item, .read_more, .icon, .send {transition: 0.3s ease-in;}
+	.nav-link:hover {
+		background: white;
+		color: var(--color-main3);
+	}
+	.zero_btn:hover {
+		transform: scale(1.06);
+		cursor: pointer;
+
+	}
+
+	.second_item:hover {
+		background-color: var(--color-main3);
+		color: white;
+		transform: scale(1.05);
+		cursor: pointer;
+		box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.3);
+	}
+	.second_item:hover .read_more {
+		color: white;
+		border-color: white;
+		cursor: pointer;
+	}
+	.second_item:hover .icon {
+		fill: white;
+	}
+	.send:hover {
+		transform: scale(1.03);
+		cursor: pointer; 
+	}
+
+
+}
+@media all and (max-width: 940px) {
+	header {
+		overflow: scroll;
+		white-space: nowrap;
+
+	}
+
+	.logo, .top-nav, .search-container {display: inline-block;}
+
+	.top-nav {
+		width: 40%;
+	}
+	html {
+		font-size: 2vw;
+	}
+	.zero_btn {
+		width: 70vw;
+		height: 60px;
+		margin-top: 30px;
+	}
+	#right_btn {margin-left: 0;}
+
+	.first_container {
+		flex-wrap: wrap;
+		margin-top: 50px;
+	}
+
+	.first_item {
+		width: 90vw;
+		margin: 40px auto;
+	}
+
+	.second_container, .garely_box {
+		overflow: auto;
+		white-space: nowrap;
+		display: block;
+	}
+	.second_item,.garely_box>.img {
+		display: inline-block;
+		width: 80vw;
+		margin: 0 20px;
+		white-space: normal;
+	}
+	.tabs>label {
+		width: 90%;
+		margin: auto;
+
+	}
+	.tabs>label[for="tab_2"], 
+	.tabs>label[for="tab_3"] {
+		margin-top: 20px;
+		margin-left: 0;
+	}
+
+
+}
